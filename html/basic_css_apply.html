@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+        * 일단 div 태그로 나누자.!!
+          *div 태그로 나누는 이유 
+           1) 유지보수가 편해진다.
+           2) 협업이 쉬워진다.
+            > div.class, id 명명시 누가 보더라도 알아볼 수 있도록 (직관적인 명명)
+            header
+            footer
+            headerSearch, header-search
+           3) 직관적인 명명 하기 
+             - 명사사용 
+             - 2가지 규칙: headerSearch, header-search 
+        
+        * div 태그 이용시 사용하는 상속 
+        * display: inline; 텍스트
+          display: blokc: 쌓이는 상자
+        
+        * 상속이 되는 속성
+          font-size
+
+        * px, em, rem
+         16px = 1em = 1rem
+         em: 부모태그에게 font-size 속성이 있으면, 그 속성을 1em으로 계산
+         rem: html에서 철학적으로 rem을 쓰는게 맞다.(구글에서 폰트 변경을 할 때 rem으로 될때 사용자에게 font-size를 변경할 권리가 보통 rem으로 준다.)
+
+
+         *float : html 배치를 위에 만들어진 html
+           = float는 떠있는 거니 2층에서 산다고 생각
+           - block의 성격을 무시
+           - 형제 구조
+           - 해당 요소들의 높이 값이 맞아야 미디어쿼리 적용시 제대로 작동
+           - 기본: float : none (1층에 산다) bottom 시작이 
+                  float : right, left (2층에 산다)
+
+        *display: flex   (굉장히 많이 쓰인다)
+         - chrome 브라우저에서 버튼을 눌러 확인 기능 을 확인한다.!
+         inline이나 float에 비해 훨씬 쉽게 되지만 위에껄 할 줄 알아야한다.  
+
+         *grid: 굉장히 최근 방식이며 실무에서 많이 쓰인다.
+           -> 레이아웃을 미리 정해놓고 태그를 가져다 붙히는 형식 
+           -> 자식에게 width ,height를 명시하지 않아도 되지만 auto로 명시해주면 좋다.
+
+
+        *font
+         font-style: 폰트 style
+         font-weight: 폰트 굵기
+          lighter(100), normal(400), bold(700), border(900)
+         font-varient
+         fint-size: 폰트 크기
+         line-height : 글 사이의 line 높이를 나타내줌
+         font-family : font를 여러 개 지정해놓으면 폰트가 없을시 대체하여 사용한다.
+         @font-face : 폰트를 불러와 쓸 수 있게 만듦
+
+        *margin, padding
+         공간을 지정하는 데 margin과 padding이 사용된다.
+         margin : border 바깥쪽
+         padding: border 안쪽
+
+ 
+         * margin 겹침, margin collapsing : 어렵고 별로 중요하지 않음
+          - margin collase는 글자나, border와 같이 보이는게 보이면 마진 겹침현상이 없어진다.!!
+           : 시각적인 효과가 있으면 마진겹침 현상을 해결해줄 수 있다.!!
+    -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- margin collapse -->
+    <div class="container7">
+      <p class="pStyle">안녕하세요</p>
+      <h1 class="hstyle">안녕하세요</h1>
+    </div>
+
+    <!-- margin padding -->
+    <div class="container6">
+      <p>코딩</p>
+    </div>
+
+    <!--font -->
+    <div class="container5">
+      <p class="font">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perferendis laudantium quis, repellat ex harum odit voluptates cumque dignissimos! Ad, mollitia doloribus a delectus praesentium adipisci maxime laudantium exercitationem ratione?</p>
+    </div>
+
+    <!-- grid 적용 -->
+    <div class="container4">
+      <div class="top4">
+        <p>reer</p>
+      </div>
+      <div class="left4">
+        <p>reer</p>
+      </div>
+      <div class="right4">
+        <p>reer</p>
+      </div>
+      <div class="bottom4">
+        <p>reer</p>
+      </div>
+    </div>
+
+    <div class="flexBox">
+      <div style="width: 100px; height: 100px; background-color: red; border: 1px solid white"></div>
+      <div style="height: 100px; width: 100px; background-color: red; border: 1px solid whitewhite"></div>
+      <div style="height: 100px; width: 100px; background-color: red; border: 1px solid white"></div>
+      <div style="height: 100px; width: 100px; background-color: red; border: w1px solid whitehite"></div>
+    </div>
+
+    <!-- flex box 적용 -->
+    <div class="container2">
+      <div class="top2">
+        <p>reer</p>
+      </div>
+      <div class="flexBox">
+        <div class="left2"></div>
+        <div class="right2"></div>
+      </div>
+      <div class="bottom2">
+        <p>reer</p>
+      </div>
+    </div>
+
+    <!-- float 적용 -->
+    <div class="container3">
+      <div class="top3">
+        <p>reer</p>
+      </div>
+      <div class="left3">
+        <p>reer</p>
+      </div>
+      <div class="right3">
+        <p>reer</p>
+      </div>
+      <div class="bottom3">
+        <p>reer</p>
+      </div>
+    </div>
+
+    <!--  div로 -->
+    <div class="container">
+      <div class="top">
+        <p>reer</p>
+      </div>
+      <div class="left">
+        <p>reer</p>
+      </div>
+      <div class="right">
+        <p>reer</p>
+      </div>
+      <div class="bottom">
+        <p>reer</p>
+      </div>
+    </div>
+
+    <!--px, em, rem-->
+    <div class="container" style="font-size: 50px">
+      <p class="px">PX</p>
+      <p class="em">EM</p>
+      <p class="rem">REM</p>
+    </div>
+
+    <!--p는 div의 상속됨: p자식 div 부모-->
+    <div class="container">
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    </div>
+
+    <div style="font-size: 12px; font-weight: bold">
+      <p>안녕하세요</p>
+      <p>안녕하세요</p>
+      <p>안녕하세요</p>
+      <p>안녕하세요</p>
+      <p>안녕하세요</p>
+    </div>
+  </body>
+</html>
