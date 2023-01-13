@@ -34,11 +34,13 @@
             <hr class="hr-style" />
           </div>
         </div>
+        <!-- 유효성검사:간단한 html 유효성검사 및 required 필수 요소 , 대부분 자바스크립트에서 이루어짐-->
         <form action="" class="form" method="">
-          <input type="text" class="input-style" placeholder="핸드폰 또는 이메일주소" />
-          <input type="text" class="input-style" placeholder="성명" />
-          <input type="text" class="input-style" placeholder="사용자이름" />
-          <input type="text" class="input-style" placeholder="비밀번호" />
+          <input type="email" class="input-style" placeholder="이메일주소" required />
+          <input type="text" class="input-style" placeholder="성명" required />
+          <input type="text" class="input-style" placeholder="사용자이름" required />
+          <input type="password" class="input-style" placeholder="비밀번호" required minlength="8" />
+          <input type="password" class="input-style" placeholder="비밀번호확인" />
           <input type="submit" value="가입" class="submit-style" />
         </form>
       </section>
