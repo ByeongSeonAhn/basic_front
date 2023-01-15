@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+    : (콜론) 가상클래스 
+    :: (콜론2개) 가상요소  
+*/
+
+      /* 마우스를 댄 경우 */
+      a:hover {
+        color: red;
+      }
+
+      /* 클릭을 하기전  */
+      a:link {
+        color: blue;
+      }
+
+      /* 클릭을 한 상태 */
+      a:visited {
+        color: green;
+      }
+
+      /* 클래스가 아닌것만 css 적용 */
+      .notClassCss p:not(.notClass) {
+        color: red;
+      }
+
+      /* nth-child css 적용: 태그 적용인 경우 */
+      .nthClassCss p:nth-child(3) {
+        color: blue;
+      }
+
+      /* nth-type css 적용: 클래스 적용인 경우*/
+      .nthClassCss .coding:nth-of-type(2) {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nth-of-type css 적용 -->
+    <div class="nthClassCss">
+      <p class="coding">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, molestiae molestias, fugit commodi aut vel perferendis sequi animi ipsa maiores aspernatur mollitia voluptas deleniti
+        nulla perspiciatis! Reiciendis dolores quos consectetur?
+      </p>
+      <p class="coding">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, molestiae molestias, fugit commodi aut vel perferendis sequi animi ipsa maiores aspernatur mollitia voluptas deleniti
+        nulla perspiciatis! Reiciendis dolores quos consectetur?
+      </p>
+      <p class="coding">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, molestiae molestias, fugit commodi aut vel perferendis sequi animi ipsa maiores aspernatur mollitia voluptas deleniti
+        nulla perspiciatis! Reiciendis dolores quos consectetur?
+      </p>
+    </div>
+
+    <!-- nth-child css 적용 -->
+    <div class="nthClassCss">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, molestiae molestias, fugit commodi aut vel perferendis sequi animi ipsa maiores aspernatur mollitia voluptas deleniti
+        nulla perspiciatis! Reiciendis dolores quos consectetur?
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, molestiae molestias, fugit commodi aut vel perferendis sequi animi ipsa maiores aspernatur mollitia voluptas deleniti
+        nulla perspiciatis! Reiciendis dolores quos consectetur?
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, molestiae molestias, fugit commodi aut vel perferendis sequi animi ipsa maiores aspernatur mollitia voluptas deleniti
+        nulla perspiciatis! Reiciendis dolores quos consectetur?
+      </p>
+    </div>
+
+    <!-- not css 적용 -->
+    <div class="notClassCss">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quos maiores aliquam saepe, odit possimus magni, id reprehenderit sunt corporis laudantium illo, inventore rerum. Qui eveniet
+        iste nisi libero provident.
+      </p>
+      <p class="notClass">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quos maiores aliquam saepe, odit possimus magni, id reprehenderit sunt corporis laudantium illo, inventore rerum. Qui eveniet
+        iste nisi libero provident.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quos maiores aliquam saepe, odit possimus magni, id reprehenderit sunt corporis laudantium illo, inventore rerum. Qui eveniet
+        iste nisi libero provident.
+      </p>
+    </div>
+
+    <!-- 링크   -->
+    <a href="https://www.nate.com/" title="nate">네이트</a>
+    <a href="https://www.naver.com" title="naver">네이버</a>
+    <a href="https://www.naver.com" title="daum">다음</a>
+  </body>
+</html>
