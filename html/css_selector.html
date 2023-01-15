@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .test ~ .lorem {
+        color: red;
+      }
+
+      a[title="naver"] {
+        color: red;
+      }
+
+      /* 
+    : (콜론) 가상클래스 
+    :: (콜론2개) 가상요소  
+
+
+    # css 선택자
+ -  1.태그이름 
+        - ex) p {color: red}
+ -  2.  class 
+        - ex) .class이름{color: red}
+ -  3.  #id   
+        - ex) #id이름{color:red}
+ -  4.* 모든거 
+        - ex) * {color: red}
+ -  5. 선택자 " "  선택자 
+        - 특징: 직계가 아니어도 다 선택
+        - ex) div p {color: red}
+        
+ -  6. 선텍자 "+"  선택자 
+        - 특징: 태그 끝난 바로 직후의 다음 태그 (직후가 아니면 선택되지 않는다.)
+        - ex) div + p {color: red}
+ -  7. 선택자 ">" 선택자 : 직계 선택자 (태그 안에 바로 직계된 선택자만
+ -  8. 선텍자 "~" 선택자 : 물걀은 +보다 더 여유롭게 선택이 가능하다.(바로 직후가 아니어도 가능하다.)
+        - ex) .test .
+  - 9. []: 속성 선택자       
+         - 특징 : a 태그나 input 태그에서 많이쓴다.
+         - ex) [속성=속성명]{color: red}
+        */
+    </style>
+  </head>
+  <body>
+    <a href="https://www.naver.com" title="naver">네이버</a>
+    <a href="https://www.naver.com" title="daum">다음</a>
+
+    <div class="test"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab minima sit voluptas obcaecati, pariatur temporibus ipsam! Porro incidunt enim cupiditate officia voluptatem rem reiciendis inventore
+      possimus ratione. Quod, placeat ducimus?
+    </p>
+    <p class="lorem">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatum aliquam mollitia sunt quod. Voluptatem nesciunt perspiciatis eos adipisci. Sint quam debitis voluptates nemo
+      recusandae molestiae placeat, magnam saepe eos.
+    </p>
+
+    <!-- 수행예시 -->
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe magni, incidunt unde id eos quaerat maiores tempora qui veniam quis porro error asperiores sint dolor! Magnam unde suscipit
+        doloremque obcaecati.
+      </p>
+      <span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ex aliquid ipsam illum blanditiis at facere sit laborum ratione eligendi beatae, ut ad consectetur! Inventore omnis ipsam atque
+          sit nostrum.
+        </p>
+      </span>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quod quasi in quaerat exercitationem recusandae dolor reiciendis illo veniam nulla, omnis eius nihil placeat reprehenderit
+        eligendi? Similique non nihil quaerat.
+      </p>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consectetur, esse blanditiis modi eaque eum ipsum laboriosam magnam necessitatibus perspiciatis vitae non officia corrupti
+      eveniet quas mollitia. Voluptate, eius temporibus.
+    </p>
+  </body>
+</html>
