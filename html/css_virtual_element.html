@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .coding::first-line {
+        color: red;
+      }
+      div {
+        position: relative;
+      }
+      /*
+        가상 요소 중 가장 중요하고 많이 사용하는 요소
+        필수요소: content
+        before 같은경우 css의 글자 이미지가 있어야하는 경우 사용된다.!!
+
+        */
+      .coding::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        top: 0;
+        left: 0;
+      }
+
+      .coding::after {
+        content: ";";
+      }
+    </style>
+  </head>
+  <body>
+    <p class="coding">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis voluptatibus, maiores quo aperiam modi cumque accusamus, beatae sit hic, ab dolorem atque a enim sapiente quasi numquam
+      quibusdam placeat nihil.
+    </p>
+  </body>
+</html>
