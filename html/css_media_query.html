@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- media query가 있을때 반드시 있어야함. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- medea query로 바뀔떄 css 가장 밑에 있어야한다. -->
+    <style>
+      .box {
+        width: 70%;
+        height: 100px;
+        border: 4px solid red;
+        background-color: yellowgreen;
+      }
+
+      @media screen and (max-width: 1200px) {
+        .box {
+          width: 80%;
+          background-color: red;
+        }
+      }
+
+      @media screen and (max-width: 760px) {
+        .box {
+          width: 90%;
+          background-color: blue;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .box {
+          width: 100%;
+          background-color: lightblue;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
