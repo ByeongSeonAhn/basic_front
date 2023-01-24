@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./basic_ani.css">
+</head>
+
+<body>
+    <!-- wiggle animation -->
+
+
+    <!-- 
+    html browser process
+    1.dom: tree
+    2.layout: width, height
+    3.paint: color
+    4. composite: transform
+ -->
+
+
+    <div class="box"></div>
+    <h1 class="wiggle">안녕하세요!</h1>
+
+    <div id="box-ani">
+        <div class="box-overlay">
+            <p>코딩</p>
+            <p>010-6755-xxxx</p>
+        </div>
+    </div>
+
+    <script>
+        /*
+        ※ JS는 태초부터 웹 ui를 제어하기 윟나 언어였다.
+        - js로 제어하고 싶은 html 태그 선택
+        - 어떤 이벤트가 발생했을 때 제어할 것인지 선택
+        - css 변경
+
+        . (점): ~의로 해석        
+        */
+
+        var boxAny = document.getElementById("box-ani");
+        boxAny.addEventListener("mouseover", function () {
+            boxAny.style.width = "200px";
+        });
+
+        boxAny.addEventListener("mouseout", function () {
+            boxAny.style.width = "100px";
+        });
+    </script>
+</body>
+
+</html>
