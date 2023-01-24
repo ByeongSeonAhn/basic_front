@@ -1,8 +1,17 @@
+/*sass를 생각하며 선택자를 나열했지만 재사용 측면에선 class의 내용을 하나씩 쓰면서 이루어진다.*/
+
 .wrap {
   background-color: white;
   width: 80%;
   max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .wrap {
+    width: 95%;
+  }
 }
 
 .black-bg {
@@ -166,7 +175,7 @@ header .gnb .search .searchUl li:hover {
 
 header .gnb .search .searchUl li span {
   color: gray;
-  font=weight: normal;
+  font-weight: normal;
 }
 
 /*notice*/
@@ -257,10 +266,12 @@ header .gnb .search .searchUl li span {
   /*flex는 가로 정렬이고 자기가 가진 width만큼 차지*/
   display: flex;
   width: 100%;
+  overflow: auto;
 }
 
 .city .card {
   width: 25%;
+  min-width: 250px;
   margin-right: 30px;
   cursor: pointer;
 }
@@ -281,6 +292,7 @@ header .gnb .search .searchUl li span {
   height: calc(150px -48px);
   border-radius: 0px 0px 15px 15px;
   padding: 24px 16px;
+  color: white;
 }
 
 .city .card figcaption p {
@@ -291,4 +303,83 @@ header .gnb .search .searchUl li span {
 
 .city .card figcaption span {
   font-size: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  /*scrollbar 없애는 방법*/
+  .city {
+    -ms-overflow-style: none; /*ie*/
+    scrollbar-width: none; /*firefox*/
+  }
+
+  .city::-webkit-scrollbar {
+    display: none;
+  }
+
+  .city .card {
+    margin-right: 15px;
+  }
+
+  .city .card figcaption p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.expression {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  grid-template-areas:
+    "heading heading"
+    "div1 div2";
+}
+
+@media screen and (max-width: 576px) {
+  .expression {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    grid-template-areas:
+      "heading"
+      "div1"
+      "div2";
+  }
+}
+
+.expression .photoDiv {
+  height: calc(700px - calc(60px * 2));
+  padding: 60px;
+  border-radius: 14px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.expression .photoDiv:nth-of-type(1) {
+  background-image: url("https://media.dongwon.com/assets/_temp/post/200615/01.jpg");
+}
+
+.expression .photoDiv:nth-of-type(2) {
+  background-image: url("https://media.dongwon.com/assets/_temp/post/200615/03.jpg");
+}
+
+.expression .photoDiv P {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+.expression .photoDiv button {
+  color: darkgray;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 14px;
 }
