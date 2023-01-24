@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./js_mouse_tracking.css">
+</head>
+
+<body>
+
+    <h1>x: <span id="x"></span>, y : <span id="y"></span></h1>
+    <div id="targetBox">
+        <div id="blind"></div>
+        <h1>안녕하세요.! 만나서 반값습니다.!!</h1>
+    </div>
+
+    <div id="cursor"></div>
+
+    <script>
+        var targetBox = document.querySelector("#targetBox");
+        var blind = document.querySelector("#blind");
+
+
+        targetBox.addEventListener("mousemove", function (e) {
+            console.log("translateX(" + e.clientX + "px)")
+            blind.style.transform = "translateX(" + e.clientX + "px)";
+        });
+
+
+        window.addEventListener("mousemove", mouseTracking);
+        var x = document.querySelector("#x");
+        var y = document.querySelector("#y");
+        var cursor = document.querySelector("#cursor");
+
+
+        //css tricks mousemove
+        function mouseTracking(event) {
+            x.innerHTML = event.clientX;
+            y.innerHTML = event.clientY;
+            cursor.style.transform = "translate(" + (event.clientX - 25) + "px," + (event.clientY - 25) + "px)"
+        }
+
+        /*
+        //스타일을 통한 mouse move
+        function mouseTracking(event) {
+            x.innerHTML = event.clientX;
+            y.innerHTML = event.clientY;
+            cursor.style.top = (event.clientY - 25) + "px";     //px을 붙여줘야 움직인다.
+            cursor.style.left = (event.clientX - 25) + "px";    //px을 붙여줘야 움직인다.
+        }
+        */
+
+
+    </script>
+
+</body>
+
+</html>
