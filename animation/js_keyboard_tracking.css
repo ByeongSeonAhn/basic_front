@@ -1,0 +1,46 @@
+/* css graduebt example */
+body {
+  height: 1000vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(45deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
+}
+
+.scroll-outer {
+  position: fixed;
+  width: 5px;
+  height: 100px;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: gray;
+  border-radius: 14px;
+}
+
+.scroll-inner {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  background-color: yellow;
+  border-radius: 14px;
+}
+
+.scroll-outer-width {
+  position: fixed;
+  width: 100px;
+  height: 5px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: gray;
+  border-radius: 14px;
+}
+
+.scroll-inner-width {
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: yellow;
+  border-radius: 14px;
+}
