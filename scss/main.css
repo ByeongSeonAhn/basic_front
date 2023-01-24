@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/* 
+
+ 파일 명에 _(언더바)를 붙히는 이유는 import 용도로 사용한다는 의미이다.
+
+*/
+div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+/*
+  sass 변수: 변하는 수(모든 것 ..?)
+  $: 기호 +"작명" : "저장할 내용";
+*/
+body {
+  /*
+    sass6: 반복문, 가정문(조건문), 변수:배열 ,오프젝트
+  */
+  /*
+  sass5: operator(연산자) 적용: +, -, * , /
+   /(슬래쉬)를 나누기를 사용할 때 주의해야 하는 이유는 css에서 슬래쉬를 다른용도로 사용하고 있다.
+   /를 할 떄 @use "sass:math" 를 사용하거나
+   /를 할 때 ()/2  괄호를 묶어 연산하거나 한다.
+  */
+  /*
+  .box {
+    width: math.div(100px,2);
+    height: 100px;
+    border: 1px solid use_test.$color;
+  }
+  */
+  /*
+  @mixin 버튼($border-color: black, $font-color:black) {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: inherit;
+    border: 1px solid lightgray;
+    border-radius:14px;
+    border: 1px solid $border-color;
+    color: $font-color;
+    font-weight: bold;
+  }
+
+  .btn-1 {
+    @include 버튼( $font-color: red)
+  }
+
+  .btn-2 {
+    @include 버튼(blue, blue)
+  }
+  */
+  /*
+    sass3 : extend 적용
+    extned: css 스타일 확장
+    % : 임시 클래스 이름
+  */
+  /*
+  %btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: inherit;
+    border: 1px solid lightgray;
+    border-radius:14px;
+  }
+
+  .btn-1 {
+    @extend %btn;
+    border: 1px solid red;
+    color: red;
+    font-weight: bold;
+  }
+
+  .btn-2 {
+    @extend %btn;
+    border: 1px soild blue;
+    color: blue;
+    font-weight: bold;
+  }
+  */
+  /*
+   //sass2: 색 적용  
+      ※ SASS 색 7가지 속성
+       - darken이랑 lighten은 hover시 많이 사용된다.
+       - darken : 어둡게
+       - lighten: 밝게
+       - saturate: 더 선명하세(높은 채도)
+       - desaturate: 더 흐리게(낮은 채도)
+       - adjust-hue: 명도 변경
+       - rgba: alpha값 변경
+  */
+  /*
+    div {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      background-color: $primary-color;
+      display: inline-block;
+      margin: 10px;
+      text-align: center;
+      &:nth-of-type(1) {
+
+      }
+      &:nth-of-type(2) {
+        background-color: darken($primary-color, 30%);
+      }
+      &:nth-of-type(3) {
+        background-color: lighten($primary-color, 20%);
+      }
+      &:nth-of-type(4) {
+        background-color: saturate($primary-color, 70%);
+      }
+      &:nth-of-type(5) {
+        background-color: desaturate($primary-color, 20%);
+      }
+      &:nth-of-type(6) {
+        background-color: adjust-hue($primary-color, 60deg);
+      }
+      &:nth-of-type(7) {
+        background-color: rgba($primary-color, 0.5);
+      }
+    }
+  */
+  /*
+  body {
+    .box {
+      width: 100%;
+      background-color: white;
+      color: black;
+      //& 부모를 가르킨다 => .box:hover { background-color: white}
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
+  */
+}
+body .box:nth-of-type(1) {
+  width: 100px;
+}
+body .box:nth-of-type(2) {
+  width: 100px;
+}
+body .box:nth-of-type(3) {
+  width: 100px;
+}
+body .box:nth-of-type(4) {
+  width: 100px;
+}
+body .box:nth-of-type(5) {
+  width: 100px;
+}
+body .box:nth-of-type(6) {
+  width: 100px;
+}
+body .box:nth-of-type(7) {
+  width: 100px;
+}
+body .box:nth-of-type(8) {
+  width: 100px;
+}
+body .box:nth-of-type(9) {
+  width: 100px;
+}
+body .box:nth-of-type(10) {
+  width: 100px;
+}
+body .box {
+  background-color: orange;
+}
+body .box {
+  background-color: blue;
+}
+body .box {
+  background-color: red;
+}
+body .box {
+  background-color: yellow;
+}
+body .box-1 {
+  background-color: orange;
+}
+body .box-2 {
+  background-color: blue;
+}
+body .box-3 {
+  background-color: yellow;
+}
+body p {
+  color: blue;
+}
