@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Sign In</h1>
+        <input type="email" name="useremail" placeholder="Email을 입력하세요">
+        <input type="password" name="password" placeholder="비밀번호를 입력하세요">
+        <input type="submit" value="로그인">
+    </form>
+
+    <form method="post">
+        <h2>다양한 input type</h2>
+        <input type="date">
+        <input type="number" value="1">
+        <input type="color">
+        <input type="file">
+    </form>
+
+    <hr>
+    <form method="get">
+        <p>음식 맛은 어떠셨나요?</p>
+        <textarea cols="30" rows="10" name="review" required></textarea>
+        <br>
+        <!-- <input type="submit"> -->
+        <!-- 방법 1 -->
+        <input type="button" value="응답 제출">
+        <!-- 방법 2 -->
+        <button>응답 제출
+            <!-- <img src="" alt="">
+            <span></span> -->
+        </button>
+
+        <!-- 버튼 타입 -->
+        <button type="reset">Clear</button>
+        <button type="button" onclick="">Just Click me!</button>
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!-- 기본 테이블 -->
+    <!-- 가로헤더(기본) -->
+    <table>
+        <tr>
+            <th>전공</th>
+            <th>이름</th>
+            <th>학번</th>
+        </tr>
+        <tr>
+            <td>전자공학과</td>
+            <td>김ㅇㅇ</td>
+            <td>20220101</td>
+        </tr>
+        <tr>
+            <td>컴퓨터공학과</td>
+            <td>박ㅇㅇ</td>
+            <td>20220102</td>
+        </tr>
+    </table>
+
+    <!-- 세로 헤더 -->
+    <table>
+        <tr>
+            <th>8:00 - 9:00</th>
+            <td>운동</td>
+        </tr>
+        <tr>
+            <th>9:00 - 10:00</th>
+            <td>조식</td>
+        </tr>
+        <tr>
+            <th>10:00 - 11:00</th>
+            <td>카페</td>
+        </tr>
+    </table>
+
+    <!-- 심화 -->
+    <p>Table with thead, tfoot, and tbody</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Header content 1</th>
+                <th>Header content 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Body content 1</td>
+                <td>Body content 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer content 1</td>
+                <td>Footer content 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>가로 및 세로 헤더</p>
+    <table>
+        <tr>
+            <td></td>
+            <th scope="col">Knocky</th>
+            <th scope="col">Flor</th>
+            <th scope="col">Ella</th>
+            <th scope="col">Juan</th>
+        </tr>
+        <tr>
+            <th scope="row">Breed</th>
+            <td>Jack Russell</td>
+            <td>Poodle</td>
+            <td>Streetdog</td>
+            <td>Cocker Spaniel</td>
+        </tr>
+        <tr>
+            <th scope="row">Age</th>
+            <td>16</td>
+            <td>9</td>
+            <td>10</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th scope="row">Owner</th>
+            <td>Mother-in-law</td>
+            <td>Me</td>
+            <td>Me</td>
+            <td>Sister-in-law</td>
+        </tr>
+        <tr>
+            <th scope="row">Eating Habits</th>
+            <td>Eats everyone's leftovers</td>
+            <td>Nibbles at food</td>
+            <td>Hearty eater</td>
+            <td>Will eat till he explodes</td>
+        </tr>
+    </table>
+
+    <p>2개 컬럼을 병합한 모양의 헤더 - colspan이용</p>
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+</body>
+</html>

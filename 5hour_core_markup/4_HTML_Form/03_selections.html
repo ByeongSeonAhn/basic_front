@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <!-- 라디오 -->
+        <h3>어디에서 식사하셨나요?</h3>
+        <input type="radio" id="inside" name="location" value="in" checked>
+        <label for="inside">매장 내 식사</label>
+        <input type="radio" id="takeout" name="location" value="out">
+        <label for="takeout">포장</label>
+
+        <!-- 체크박스 -->
+        <h3>어떤 메뉴를 주문하셨나요?</h3>
+        <input type="checkbox" id="steak" name="menu" value="steak">
+        <label for="steak">스테이크</label>
+        <input type="checkbox" id="pasta" name="menu" value="pasta">
+        <label for="pasta">파스타</label>
+        <input type="checkbox" id="risotto" name="menu" value="risotto">
+        <label for="risotto">리조또</label>
+        <input type="checkbox" id="salad" name="menu" value="salad">
+        <label for="salad">샐러드</label>
+
+        <!-- name을 다르게 제출 -->
+        <h3>어떤 음료를 드셨나요?</h3>
+        <input type="checkbox" id="sprite" name="sprite" value="true">
+        <label for="sprite">스프라이트</label>
+        <input type="checkbox" id="coke" name="coke" value="true">
+        <label for="coke">콜라</label>
+        
+        <!-- Select box, 드롭 다운 리스트 -->
+        <h3>음식 맛은 어떠셨나요?</h3>
+        <select name="stars">
+            <option value="bad">1</option>
+            <option value="soso">2</option>
+            <option value="okay">3</option>
+            <option value="good">4</option>
+            <option value="great" selected>5</option>
+        </select>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
