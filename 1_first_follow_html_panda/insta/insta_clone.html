@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- 
+        클론 코딩 
+        instagram figma
+
+        vh: view heght
+        100vh: height 100%
+
+
+     -->
+  <style></style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="instagram">
+      <div class="header">
+        <div class="header-left">
+          <img class="header-img" src="../assets/img/Sketchpad.png" width="38px" height="38px" />
+          <p>인스타</p>
+        </div>
+        <div class="header-right">
+          <p class="right-menu">···</p>
+        </div>
+      </div>
+      <div class="img">
+        <img src="../assets/img/Sketchpad.png" width="100%" height="100%" />
+      </div>
+      <div class="footer">
+        <div class="top-left">
+          <span>
+            <svg id="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-heart" viewBox="0 0 16 16">
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+            </svg>
+            <svg id="fill-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-heart-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+            </svg>
+
+            <script>
+              var heart, fillHeart;
+              heart = document.getElementById("heart");
+              fillHeart = document.getElementById("fill-heart");
+              heart.addEventListener("click", function () {
+                heart.style.display = "none";
+                fillHeart.style.display = "block";
+              });
+
+              fillHeart.addEventListener("click", function () {
+                fillHeart.style.display = "none";
+                heart.style.display = "block";
+              });
+            </script>
+          </span>
+          <span>comment</span>
+          <span>DM</span>
+        </div>
+        <div class="top-center">
+          <ul>
+            <li style="background-color: blue"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="top-right">
+          <span>shared</span>
+        </div>
+        <div class="like">
+          <p><b>100 likes</b></p>
+        </div>
+        <div class="comment">
+          <p><b>Lorem</b> ipsum dolor, sit amet consectetur adipisicing elit. Aliquam doloremque possimus culpa velit
+            commodi molestiae impedit similique quos veniam. Ad maiores asperiores nihil facilis voluptas quam maxime
+            pariatur consectetur dolor!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

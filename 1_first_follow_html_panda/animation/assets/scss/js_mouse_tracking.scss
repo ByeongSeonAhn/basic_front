@@ -1,32 +1,32 @@
 body {
     margin: 20px;
-    background-color: white;  
+    background-color: white;
 }
 
-#targetBox {  
+#targetBox {
     width: auto;
-    display: inline-block;  
+    display: inline-block;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
 }
 
-#targetBox h1 { 
+#targetBox h1 {
     margin: 0px;
     padding: 20px;
     font-size: 1.5rem;
 }
 
-#blind { 
+#blind {
     @extend body;
     width: 100%;
     height: 100%;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
 
 
-#cursor { 
+#cursor {
     position: absolute;
     top: 0;
     left: 0;

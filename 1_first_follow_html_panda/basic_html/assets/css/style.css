@@ -1,0 +1,281 @@
+.container7 {
+  margin-top: 5rem;
+  border: 1px solid black;
+}
+
+.hstyle {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+
+.pStyle {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+
+.container6 {
+  width: 200px;
+  height: 600px;
+  border: 1px solid black;
+}
+
+/* p {
+  width: 158px;
+  margin : 20px 15px 10px 5px;
+  padding: 10px;
+  border: 1px solid blue;
+  display: inline-block;
+} */
+
+
+@font-face {
+  font-family: LeandroDaniel;
+  src: url(../../../assets/font/LeandroDaniel.ttf);
+}
+
+
+.font {
+  font-style: italic;
+  font-weight: bolder;
+  font-weight: small-caps;
+  line-height: 40px;
+  font-family: 'LeandroDaniel', Courier, monospace;
+}
+
+.container4 {
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  color: white;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*가로*/
+  grid-template-rows: 1fr 1fr 1fr;
+  /*세로*/
+  grid-template-areas:
+    "top right right"
+    "left right right"
+    "bottom right right";
+
+}
+
+.top4 {
+  background-color: red;
+  font-size: 16px;
+  grid-area: top;
+  width: auto;
+  height: auto;
+}
+
+
+.left4 {
+  background-color: blue;
+  font-size: 16px;
+  grid-area: left;
+  width: auto;
+  height: auto;
+}
+
+
+.right4 {
+  background-color: green;
+  grid-area: right;
+  width: auto;
+  height: auto;
+}
+
+
+.bottom4 {
+  background-color: purple;
+  grid-area: bottom;
+  width: auto;
+  height: auto;
+}
+
+.container2 {
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  font-size: 0px;
+  color: white;
+  font-weight: bold;
+}
+
+.top2 {
+  background-color: red;
+  width: 400px;
+  height: 200px;
+  font-size: 16px;
+}
+
+
+.left2 {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+}
+
+
+.right2 {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+}
+
+
+.bottom2 {
+  background-color: purple;
+  width: 400px;
+  height: 200px;
+}
+
+.flexBox {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+
+.container3 {
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  font-size: 0px;
+  color: white;
+  font-weight: bold;
+}
+
+.top3 {
+  background-color: red;
+  width: 400px;
+  height: 200px;
+}
+
+
+.left3 {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+
+.right3 {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+
+.bottom3 {
+  clear: both;
+  background-color: purple;
+  width: 400px;
+  height: 200px;
+}
+
+
+
+
+.container {
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  font-size: 0px;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+.top {
+  background-color: red;
+  width: 400px;
+  height: 200px;
+  font-size: 16px;
+}
+
+
+.left {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+
+.right {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+.bottom {
+  background-color: purple;
+  width: 400px;
+  height: 200px;
+}
+
+
+
+.px {
+  font-size: 16px;
+}
+
+.em {
+  font-size: 1em;
+}
+
+.rem {
+  font-size: 1rem;
+}
+
+
+.parent {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.child {
+  width: 70%;
+  height: 70%;
+  background-color: blue;
+}
+
+#title {
+  color: red;
+}
+
+.author {
+  color: blue;
+}
+
+
+.title-color {
+  color: red;
+}
+
+.title-size {
+  font-size: 36px;
+}
+
+.title-font {
+  font-weight: bold;
+}
+
+#heading {
+  font-size: 36px;
+  color: blue;
+  font-weight: bold;
+}

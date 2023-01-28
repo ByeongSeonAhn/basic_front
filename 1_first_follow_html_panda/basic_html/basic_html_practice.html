@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- 
+
+<head>
+  <!-- 
 
        html 기본태그
         질문1: style tag는 why head 안에 선언되는가? 
@@ -103,96 +104,99 @@
          
         -->
 
-        <!-- 링크를 불러오는 건 보통 랜더링 영역으로 상단에 둔다.-->
-        <link rel="stylesheet" href="../css/style.css" />
-        <style>
-          .red {
-            color: red;
-          }
-          .blue {
-            color: blue;
-          }
-        </style>
-        
-  </head>
-  <body style="border: 4px solid red">
-    <div class="blue">
-      <p>안녕하세요1</p>
-      <p>안녕하세요2</p>
-      <p>안녕하세요3</p>
-      <p>안녕하세요4</p>
-      <p>안녕하세요5</p>
-    </div>
+  <!-- 링크를 불러오는 건 보통 랜더링 영역으로 상단에 둔다.-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <style>
+    .red {
+      color: red;
+    }
 
-    <p>안녕하세요 <span class="blue">코딩</span>입니다.</p>
+    .blue {
+      color: blue;
+    }
+  </style>
 
+</head>
 
+<body style="border: 4px solid red">
+  <div class="blue">
+    <p>안녕하세요1</p>
+    <p>안녕하세요2</p>
+    <p>안녕하세요3</p>
+    <p>안녕하세요4</p>
+    <p>안녕하세요5</p>
+  </div>
 
-    <!-- 가급적 style은 따로 css에서 준다. width height는 속성에 넣어줄 수 있으나 보통css로 뺸다-->
-    <img style="width:100px; height: 500px;" src="../img/Sketchpad.png"></img>
+  <p>안녕하세요 <span class="blue">코딩</span>입니다.</p>
 
 
-    <a href="../linking/linking_test.html">linking_test</a>
-    <p>2<sup>2</sup> 2<sub>2</sub></p>
-    <abbr title="HyperText Markup Language">HTML</abbr>
 
-    <!--폰트스타일을 위한 태그-->
-    <p>안녕하세요!<i>코딩</i>입니다</p>
-    <!--sementic tag-->
-    <p>안녕하세요!<em>코딩</em>입니다</p>
+  <!-- 가급적 style은 따로 css에서 준다. width height는 속성에 넣어줄 수 있으나 보통css로 뺸다-->
+  <img style="width:100px; height: 500px;" src="../assets/img/Sketchpad.png"></img>
 
-    <!--폰트스타일을 위한 태그-->
-    <p>안녕하세요!<b>코딩</b>입니다</p>
-    <!--sementic tag-->
-    <p>안녕하세요!<strong>코딩</strong>입니다</p>
 
-    <p>안녕하세요!<del>코딩</del>입니다</p>
-    <p>안녕하세요!<s>코딩</s>입니다</p>
-    <ol start="5">
-      <li>abc</li>
-      <ol>
-        <li>가나다</li>
-        <li>마바사</li>
-        <ul>
-          <li>가나다</li>
-          <li>마바사</li>
-        </ul>
-      </ol>
-      <ul style="list-style: none">
+  <a href="./linking/linking_test.html">linking_test</a>
+  <p>2<sup>2</sup> 2<sub>2</sub></p>
+  <abbr title="HyperText Markup Language">HTML</abbr>
+
+  <!--폰트스타일을 위한 태그-->
+  <p>안녕하세요!<i>코딩</i>입니다</p>
+  <!--sementic tag-->
+  <p>안녕하세요!<em>코딩</em>입니다</p>
+
+  <!--폰트스타일을 위한 태그-->
+  <p>안녕하세요!<b>코딩</b>입니다</p>
+  <!--sementic tag-->
+  <p>안녕하세요!<strong>코딩</strong>입니다</p>
+
+  <p>안녕하세요!<del>코딩</del>입니다</p>
+  <p>안녕하세요!<s>코딩</s>입니다</p>
+  <ol start="5">
+    <li>abc</li>
+    <ol>
+      <li>가나다</li>
+      <li>마바사</li>
+      <ul>
         <li>가나다</li>
         <li>마바사</li>
       </ul>
-      <li value="10">abc</li>
-      <li>def</li>
     </ol>
-    <ul>
+    <ul style="list-style: none">
       <li>가나다</li>
       <li>마바사</li>
-      <li>abc</li>
-      <li>def</li>
     </ul>
+    <li value="10">abc</li>
+    <li>def</li>
+  </ol>
+  <ul>
+    <li>가나다</li>
+    <li>마바사</li>
+    <li>abc</li>
+    <li>def</li>
+  </ul>
 
-    <!-- 아래 2개는 사용자가 보기에 똑같지만 semantic tag 의미상 제목은 h를 써야한다.-->
-    <h1>안녕하세요</h1>
-    <p style="font-size: 2rem; font-weight: bold">안녕하세요</p>
+  <!-- 아래 2개는 사용자가 보기에 똑같지만 semantic tag 의미상 제목은 h를 써야한다.-->
+  <h1>안녕하세요</h1>
+  <p style="font-size: 2rem; font-weight: bold">안녕하세요</p>
 
-    <h2>안녕하세요</h2>
-    <h3>안녕하세요</h3>
-    <h4>안녕하세요</h4>
-    <h5>안녕하세요</h5>
-    <h6>안녕하세요</h6>
+  <h2>안녕하세요</h2>
+  <h3>안녕하세요</h3>
+  <h4>안녕하세요</h4>
+  <h5>안녕하세요</h5>
+  <h6>안녕하세요</h6>
 
-    <p style="display: inline-block">안녕하세요</p>
-    <p style="display: inline-block">안녕하세요</p>
-    <p>안녕하세요</p>
-    <p>안녕하세요</p>
-    <p>안녕하세요</p>
+  <p style="display: inline-block">안녕하세요</p>
+  <p style="display: inline-block">안녕하세요</p>
+  <p>안녕하세요</p>
+  <p>안녕하세요</p>
+  <p>안녕하세요</p>
 
-    <p id="heading">안녕하세요2</p>
-    <p class="title-color title-font title-size">코딩입니다!</p>
-    <a href="https://www.naver.com">네이버</a>
+  <p id="heading">안녕하세요2</p>
+  <p class="title-color title-font title-size">코딩입니다!</p>
+  <a href="https://www.naver.com">네이버</a>
 
-    <p class="title">안녕하세요</p>
-    <p class="author"></p>
-  </body>
+  <p class="title">안녕하세요</p>
+  <p class="author"></p>
+</body>
+
 </html>
