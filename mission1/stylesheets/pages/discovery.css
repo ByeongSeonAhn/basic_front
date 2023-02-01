@@ -1,0 +1,134 @@
+/* CSS 작성 */
+.wrap {
+  position: relative;
+  width: 1020px;
+  height: 100vh;
+  margin: 0px auto;
+}
+
+.mg-0 {
+  margin: 0;
+}
+
+.header-img {
+  margin-top: 100px;
+  margin-bottom: 48px;
+}
+
+/* section */
+section {
+  position: absolute;
+  width: inherit;
+  height: 1010px;
+}
+
+/* section title*/
+.section-title {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section-title h4 {
+  color: var(--color-gray-600);
+}
+
+.section-title span {
+  color: var(--color-gray-600);
+}
+
+
+/*section container */
+.section-container {
+  position: relative;
+  width: 1020px;
+  height: 958px;
+}
+
+/*section container 버튼 */
+.section-container-btn {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background: rgba(0, 0, 0, 0.2);
+  bottom: 20px;
+  left: 20px;
+  border-width: 0px;
+}
+
+.section-container-btn:hover {
+  background-color: var(--color-blue-600);
+  width: 112px;
+  transform: tanslateX(112px);
+  transition: all 1s ease-in-out;
+}
+
+.section-container-btn:hover::before {
+  content: "구매하기";
+  color: white;
+}
+
+
+.section-container-btn::after {
+  content: " > ";
+  color: white;
+}
+
+/*큰 이미지박스 */
+.section-container-box-lm {
+  position: relative;
+  width: 502px;
+  height: 310px;
+  border: 1px solid var(--color-gray-600);
+  float: left;
+}
+
+.section-container-box-lm:hover {
+  border: 1px solid var(--color-blue-600);
+}
+
+
+/*작은 이미지박스 */
+.section-container-box-sm {
+  position: relative;
+  width: 243px;
+  height: 310px;
+  border: 1px solid var(--color-gray-600);
+  float: left;
+}
+
+.section-container-box-sm:hover {
+  border: 1px solid var(--color-blue-600);
+}
+
+/* 큰 이미지박스 마진  */
+.section-container-img-lm {
+  margin: 20px 28px;
+}
+
+/* 작은 이미지박스 마진  */
+.section-container-img-sm {
+  margin: 14px 22px 14px 21px;
+}
+
+/*마진 top 16px*/
+.mg-top-16 {
+  margin-top: 16px;
+}
+
+/*마진 right 16px*/
+.mg-right-16 {
+  margin-right: 16px;
+}
+
+/*마진 bottom 16px*/
+.mg-bottom-16 {
+  margin-bottom: 16px;
+}
+
+/*마진 left 16px*/
+.mg-left-16 {
+  margin-left: 16px;
+}
