@@ -1,0 +1,38 @@
+/* 오늘의 쇼핑 제안 */
+
+.wrap {
+    margin: 0px auto;
+    height:100vh;
+    width:1022px;
+}
+ol, ul {
+    list-style-image: url("../../assets/icon/shopping.svg");
+}
+
+.section-box {
+    position:relative;
+    width: 200px;
+    height: 270px;
+    border: 1px solid black
+}
+.section-box-discountRate {
+    position:absolute;    
+    display:flex;
+justify-content: center;
+    align-items: center;
+    
+    width:53px;
+    height:30px;
+    color: var(--color-white);
+    background-color: var(--color-red-500);
+    
+
+
+}
+
+
+
+
+
+
+
