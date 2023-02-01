@@ -1,16 +1,48 @@
 /* 오늘의 쇼핑 제안 */
 
 .wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    border: 1px solid black
+    position: relative;
+    width: 1022px;
+    height: 100vh;
+    margin: 0px auto;
+    border: 1px solid black;
 }
 
-ol,
+.mg-0 {
+    margin: 0;
+}
+
+.header-img {
+    width: 176px;
+    height: 40px;
+    margin-top: 100px;
+    margin-bottom: 48px;
+}
+
+section {
+    position: absolute;
+    width: inherit;
+    height: 354px;
+    border: 1px solid black;
+}
+
+section ol,
 ul {
-    list-style-image: url("../../assets/icon/shopping.svg");
+    list-style-image: none;
+    padding-left: 30px;
+}
+
+section li {
+    display: inline;
+}
+
+.shop-ico {
+    background-image: url("../../assets/icon/shopping.svg");
+    background-repeat: no-repeat;
+}
+
+.section-title {
+    margin-bottom: 24px;
 }
 
 .section-box {
@@ -21,16 +53,21 @@ ul {
 }
 
 .section-box-discountRate {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    position: absolute;
     width: 53px;
     height: 30px;
     color: var(--color-white);
     background-color: var(--color-red-500);
+    z-index: 5;
+}
 
-
-
+.section-box-productImg {
+    position: absolute;
+    background-image: url(../../assets/offer/furniture.jpg);
+    width: 160px;
+    height: 160px;
+    margin: 14px 20px 96px;
 }
