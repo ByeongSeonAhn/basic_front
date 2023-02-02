@@ -45,6 +45,13 @@ section li {
     margin-bottom: 24px;
 }
 
+.section-box-list {
+    display:flex;
+    flex-direction: row;
+    position:absolute;
+    width: inherit
+}
+
 .section-box {
     position: relative;
     width: 200px;
@@ -70,4 +77,45 @@ section li {
     width: 160px;
     height: 160px;
     margin: 14px 20px 96px;
+}
+
+.section-box-info {
+    position: relative;
+    margin: 186px 14px 38px
+}
+
+.section-box-productDesc {
+    position: absolute;
+    width: 172px;
+    height: 17px;
+    font-size: var(--section-font-size);
+}
+
+.section-box-deliveryType {
+    position: absolute;
+}
+
+/* rocket-delivery */
+.section-box-deliveryType .delivery-r{
+    background-image: url(../../assets/icon/badge-rocket.svg);
+}
+
+/* free-shipping delievery*/
+.section-box-deliveryType .delivery-r{
+    background-image: url(../../assets/icon/badge-rocket.svg);
+}
+
+.section-box-review {
+    position:absolute;
+    top: 180px;
+    width:117px;
+    height: 17px;
+}
+
+.section-box-review .ratingStarImg {
+    background: url(../../assets/sprites/rating-stars.png) no-repeat fixed center;
+}
+
+.section-box-review .reviewCnt {
+     color: var(--color-gray-500)
 }
