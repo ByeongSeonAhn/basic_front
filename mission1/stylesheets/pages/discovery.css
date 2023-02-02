@@ -61,8 +61,9 @@ section {
 .section-container-btn:hover {
   background-color: var(--color-blue-600);
   width: 112px;
-  transform: tanslateX(112px);
-  transition: all 1s ease-in-out;
+  /* transform: tanslateX(112px); */
+  /* transition: all 1s ease-in-out; */
+  transition: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .section-container-btn:hover::before {
