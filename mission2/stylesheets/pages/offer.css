@@ -1,15 +1,17 @@
 /* 오늘의 쇼핑 제안 */
-
 .wrap {
     position: relative;
     width: 1022px;
     height: 100vh;
     margin: 0px auto;
-    border: 1px solid black;
 }
 
-.mg-0 {
-    margin: 0;
+.dp-none {
+    display: none;
+}
+
+.dp-hidden {
+    visibility: hidden;
 }
 
 .header-img {
@@ -23,7 +25,6 @@ section {
     position: absolute;
     width: inherit;
     height: 354px;
-    border: 1px solid black;
 }
 
 section ol,
@@ -37,7 +38,7 @@ section li {
 }
 
 .shop-ico {
-    background-image: url("../../assets/icon/shopping.svg");
+    background-image: url(../../assets/icon/shopping.svg);
     background-repeat: no-repeat;
 }
 
@@ -46,9 +47,9 @@ section li {
 }
 
 .section-box-list {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    position:absolute;
+    position: absolute;
     width: inherit
 }
 
@@ -56,7 +57,6 @@ section li {
     position: relative;
     width: 200px;
     height: 270px;
-    border: 1px solid black
 }
 
 .section-box-discountRate {
@@ -73,7 +73,6 @@ section li {
 
 .section-box-productImg {
     position: absolute;
-    background-image: url(../../assets/offer/furniture.jpg);
     width: 160px;
     height: 160px;
     margin: 14px 20px 96px;
@@ -91,31 +90,75 @@ section li {
     font-size: var(--section-font-size);
 }
 
-.section-box-deliveryType {
+.section-box-productDetailInfo {
     position: absolute;
+    margin-top: 41px;
 }
 
-/* rocket-delivery */
-.section-box-deliveryType .delivery-r{
+/*로켓배송 */
+.delivery-r {
+    width: 55x;
+    height: 16px;
     background-image: url(../../assets/icon/badge-rocket.svg);
+    background-repeat: no-repeat;
 }
 
-/* free-shipping delievery*/
-.section-box-deliveryType .delivery-r{
-    background-image: url(../../assets/icon/badge-rocket.svg);
+/* 무료배송*/
+.delivery-f {
+    font-size: var(--section-font-size);
+    color: var(--color-gray-700)
 }
 
-.section-box-review {
-    position:absolute;
-    top: 180px;
-    width:117px;
-    height: 17px;
+/*별점-검은배경  */
+.ratingStarImg-bg {
+    display: block;
+    float: left;
+    width: 65px;
+    height: 15px;
+    background-image: url(../../assets/sprites/rating-stars.png);
+    background-repeat: no-repeat;
+
 }
 
-.section-box-review .ratingStarImg {
-    background: url(../../assets/sprites/rating-stars.png) no-repeat fixed center;
+/*별점-%  */
+.ratingStarImg {
+    display: block;
+    float: left;
+    width: 92%;
+    height: 15px;
+    background-image: url(../../assets/sprites/rating-stars.png);
+    background-position-x: 0px;
+    background-position-y: -140px;
+    background-repeat: no-repeat;
 }
 
-.section-box-review .reviewCnt {
-     color: var(--color-gray-500)
+/*리뷰갯수*/
+.reviewCnt {
+    float: left;
+    margin-left: 4px;
+    width: 55px;
+    font-size: var(--section-font-size);
+    color: var(--color-gray-500)
+}
+
+
+/*이미지 클래스*/
+.section-box-main-img-1 {
+    background-image: url(../../assets/offer/furniture.jpg);
+}
+
+.section-box-main-img-2 {
+    background-image: url(../../assets/offer/renton.jpg);
+}
+
+.section-box-main-img-3 {
+    background-image: url(../../assets/offer/drying-rack.jpg);
+}
+
+.section-box-main-img-4 {
+    background-image: url(../../assets/offer/boohgle.jpg);
+}
+
+.section-box-main-img-5 {
+    background-image: url(../../assets/offer/deskset.jpg);
 }
