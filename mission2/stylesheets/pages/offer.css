@@ -87,7 +87,8 @@ section li {
     position: absolute;
     width: 172px;
     height: 17px;
-    font-size: var(--section-font-size);
+    font-size: var(--section-font-size-14);
+    font-weight: 400;
 }
 
 .section-box-productDetailInfo {
@@ -97,15 +98,14 @@ section li {
 
 /*로켓배송 */
 .delivery-r {
-    width: 55x;
+    width: 55px;
     height: 16px;
-    background-image: url(../../assets/icon/badge-rocket.svg);
     background-repeat: no-repeat;
 }
 
 /* 무료배송*/
 .delivery-f {
-    font-size: var(--section-font-size);
+    font-size: var(--section-font-size-14);
     color: var(--color-gray-700)
 }
 
@@ -137,7 +137,7 @@ section li {
     float: left;
     margin-left: 4px;
     width: 55px;
-    font-size: var(--section-font-size);
+    font-size: var(--section-font-size-14);
     color: var(--color-gray-500)
 }
 

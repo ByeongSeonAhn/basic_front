@@ -69,7 +69,8 @@
   --color-pink-500: #FF2E89;
 
   --base-size: 10px;
-  --section-font-size: 14px;
+  --section-font-size-12: 12px;
+  --section-font-size-14: 14px;
   --font-family: 'Noto Sans KR', sans-serif;
 }
 

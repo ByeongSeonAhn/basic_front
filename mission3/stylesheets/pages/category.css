@@ -6,41 +6,216 @@
     margin: 0px auto;
 }
 
-header {
+.header {
     margin-top: 100px;
     margin-bottom: 48px;
 }
 
-.box {
+.section-title {
+    margin-bottom: 24px;
+}
+
+.section-title-detail-post {
+    margin-left: 10px;
+    color: var(--color-blue-600);
+}
+
+.container-1 {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 1020px;
+    flex-direction: row;
+    width: inherit;
     height: 634px;
-    border: 1px solid black;
+    border-top: 1.17px solid var(--color-brown-300);
+    border-bottom: 1.17px solid var(--color-brown-300);
 }
 
-.mg-16 {
-    margin-right: 16px;
-    margin-bottom: 9px;
+.container-2 {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    height: 634px;
+    border-top: 1.17px solid var(--color-green-700);
+    border-bottom: 1.17px solid var(--color-green-700);
 }
 
-.box-smbig {
-    width: 176px;
-    height: 315px;
-    border: 1px solid black;
-
+.box-1 {
+    width: 174px;
+    height: 634px;
 }
 
-
-.box-sm {
-    width: 140px;
-    height: 300px;
-    border: 1px solid black;
+.box-1-category {
+    margin-top: 48px;
+    margin-left: 24px;
 }
 
-.box-lm {
+.box-1-category-title-1 {
+    color: var(--color-brown-300)
+}
+
+.box-1-category-title-2 {
+    color: var(--color-green-700)
+}
+
+.box-1-keyword {
+    margin-top: 248px;
+    margin-left: 24px;
+}
+
+.box-1-title {
+    font-size: var(--section-font-size-18);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.box-1-tag {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.box-1-tag-detail-1 {
+    color: var(--color-brown-300);
+    padding: 6px 10px;
+    font-size: 12px;
+    border: 1px solid var(--color-gray-400);
+    margin-bottom: 12px;
+}
+
+.box-1-tag-detail-2 {
+    color: var(--color-green-700);
+    padding: 6px 10px;
+    font-size: 12px;
+    border: 1px solid var(--color-gray-400);
+    margin-bottom: 12px;
+}
+
+.box-2 {
+    position: relative;
     width: 320px;
-    height: 631px;
-    border: 1px solid black;
+    height: 634px;
+}
+
+.box-2-desc-1 {
+    position: absolute;
+    background-color: var(--color-brown-300);
+    width: 260px;
+    height: 90px;
+    bottom: 58px;
+    margin: 0px 30px;
+}
+
+.box-2-desc-2 {
+    position: absolute;
+    background-color: var(--color-green-700);
+    width: 260px;
+    height: 90px;
+    bottom: 58px;
+    margin: 0px 30px;
+}
+
+.box-2-desc-main {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-white);
+    text-align: center;
+    margin-top: 19px;
+}
+
+.box-2-desc-sub {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-align: center;
+    margin-top: 8px;
+}
+
+.box-2-indicator {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 22px;
+    margin: 0px 144px;
+}
+
+.box-2-dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 8px;
+    background-color: var(--color-gray-500);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.box-2-dot:nth-of-type(1) {
+    background-color: var(--color-gray-700);
+}
+
+.box-3-productList {
+    display: flex;
+    flex-direction: column;
+    width: 528px;
+    height: 634px;
+}
+
+
+.box-3-product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 528px;
+    height: 317px;
+}
+
+
+/* 첫번쨰 제외 */
+.box-3-product:not(:nth-child(1)):before {
+    display: block;
+    width: 528px;
+    content: '';
+    border: 1px solid var(--color-gray-600)
+}
+
+.box-3-product-detail {
+    width: 160px;
+    height: 300px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.box-3-product-img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 12px;
+}
+
+.box-3-product-desc {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.box-3-sale-type {
+    font-size: 14px;
+    color: var(--color-red-500);
+    margin-bottom: 4px;
+}
+
+.box-3-price {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+
+.mg-t-9 {
+    margin-top: 9px;
+}
+
+.mg-t-24 {
+    margin-top: 24px;
+}
+
+.dp-none {
+    display: none;
 }
