@@ -56,21 +56,26 @@
           </form>
         </div>
       </div>
-      <div class="myCoupang">
+      <div class="myCoupang is--active">
         <button class="myCoupang-btn">
           <img class="myCoupang-img" src="./assets/icon/my-coupang.svg" alt="마이쿠팡">
           <span class="myCoupang-txt">마이쿠팡</span>
         </button>
-        <ul></ul>
+        <ul class="myCoupang-list">
+          <li>주문목록</li>
+          <li>취소/반품</li>
+          <li>찜리스트</li>
+        </ul>
       </div>
-      <div class="cart">
+      <div class="cart cart--empty">
         <button class="cart-btn">
           <img class="cart-img" src="./assets/icon/cart.svg" alt="장바구니">
           <span class="cart-txt">장바구니</span>
+          <span class="cart-count">0</span>
         </button>
-        <ul></ul>
+        <div class="cart-empty-txt">장바구니에 담긴 상품이 없습니다.</div>
       </div>
-      <div class="cate-detail">
+      <div class=" cate-detail">
         <ul class="cate-detail-info">
           <li class="cate-detail-keyword"><span class="cate-span mg-l-4"><img src="./assets/icon/icon-rocket.svg"
                 alt="로켓배송"></span>로켓배송
