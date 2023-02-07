@@ -1,3 +1,67 @@
 /* ---------------------------------------------- */
 /* Icon Font                                      */
 /* ---------------------------------------------- */
+.icon-appliances:before {
+    content: "\e900";
+}
+
+.icon-baby:before {
+    content: "\e901";
+}
+
+.icon-beauty:before {
+    content: "\e902";
+}
+
+.icon-book:before {
+    content: "\e903";
+}
+
+.icon-car:before {
+    content: "\e904";
+}
+
+.icon-clothes:before {
+    content: "\e905";
+}
+
+.icon-foods:before {
+    content: "\e906";
+}
+
+.icon-houseware:before {
+    content: "\e907";
+}
+
+.icon-interior:before {
+    content: "\e908";
+}
+
+.icon-pet:before {
+    content: "\e909";
+}
+
+.icon-sports:before {
+    content: "\e90a";
+}
+
+.icon-stationery:before {
+    content: "\e90b";
+}
+
+.icon-theme:before {
+    content: "\e90c";
+}
+
+.icon-toy:before {
+    content: "\e90d";
+}
+
+
+.icon-kitchenware:before {
+    content: "\e90e";
+}
+
+.icon-travel:before {
+    content: "\e90f";
+}
