@@ -65,3 +65,8 @@
 .icon-travel:before {
     content: "\e90f";
 }
+
+.icon-more-right-active:before {
+    content: "\e910";
+    color: #0074e9;
+}
